@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -64,7 +65,7 @@
                 </div>
                 <!-- Portfolio Section Content-->
                 <div class="row">
-                    <p class="lead mb-0">PORTFOLIO DESCRIPTION HERE</p></div>
+                    <p class="ms-auto fs-3 mb-5 text-center">This section showcases the relevant projects I have worked on to date.</p></div>
                 </div>
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
@@ -129,10 +130,8 @@
         <!-- About Section-->
         <section class="page-section bg-primary text-white mb-0" id="about">
             <div class="container d-flex align-items-center flex-column">
-                <div style="grid-template-columns: 1fr 1fr;" class="d-grid gap-0 row-gap-3">
-                    <!-- About Avatar Image-->
-                    <img src="assets/img/portfolio/about-pic.png" class="img-fluid" style="height: 300px;" alt="Descriptive text">
-                </div>
+                <!-- About Avatar Image-->
+                <img src="assets/img/portfolio/about-pic.png" class="rounded mx-auto d-block" style="height: 300px;" alt="">
                 <!-- About Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
                 <!-- Icon Divider-->
@@ -145,13 +144,6 @@
                 <div class="row">
                     <div class="col-lg-4 ms-auto"><p class="lead">Passionate about creating immersive digital experiences, I am currently pursuing a BSc in Design & Artificial Intelligence at SUTD. My background combines the creative storytelling of game design with the analytical precision of AI, allowing me to build interfaces that are both aesthetically compelling and technically optimized.</p></div>
                     <div class="col-lg-4 me-auto"><p class="lead">My multi-disciplinary approach to design is also shaped by my personal creative pursuits as a musician and a cosplayer. Whether arranging an existing or original song for a performance or immersing myself into the role of a character, I apply the same principles of precision and audience immersion to my digital products.</p></div>
-                </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                        <i class="fas fa-download me-2"></i>
-                        Free Download!
-                    </a>
                 </div>
             </div>
         </section>
@@ -170,86 +162,26 @@
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                             <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            <div class="text-start mt-4 ms-auto fs-2 mb-5 px-3">
+                                <p class="fs-3 mb-4">
+                                    <i class="fas fa-envelope fa-fw"></i>
+                                    <span>anna.r.sawit@gmail.com</span>
+                                </p>
+                                <p class="fs-3 mb-4">
+                                    <i class="fas fa-envelope fa-fw"></i>
+                                    <span>anna_sawit@mymail.sutd.edu.sg</span>
+                                </p>
+                                <p class="fs-3 mb-4">
+                                    <i class="fas fa-phone fa-fw"></i>
+                                    <span>+65 96377651</span>
+                                </p>
+                                <p class="fs-3 mb-4">
+                                    <i class="fa fa-telegram" aria-hidden="true"></i>
+                                    <span>Number here</span>
+                                </p>
                             </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
-                        </form>
                     </div>
-                </div>
-            </div>
-        </section>
-
-                <!-- About Section the 2nd-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
-                </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                        <i class="fas fa-download me-2"></i>
-                        Free Download!
-                    </a>
                 </div>
             </div>
         </section>
@@ -259,7 +191,7 @@
             <div class="container">
                 <div class="row">
                     <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">SUTD Campus Location</h4>
                         <p class="lead mb-0">
                             8 Somapah Rd 
@@ -268,19 +200,9 @@
                         </p>
                     </div>
                     <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                        <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
-                        </p>
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Find Me Online</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/anna-rica-sawit/" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
@@ -313,16 +235,36 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/keeper.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">This project was in collaboration with Lionsbot International where I worked in a team of 5 to plan out and engineer an ergonomic, 
-                                        motorized housekeeping trolley designed to mitigate musculoskeletal injuries for hotel staff through integrated 24V high-torque drive systems 
-                                        and UV-C sterilization. My main contribution was that I produced a high-fidelity cinematic project trailer, utilizing AI to produce 3D product 
-                                        visualization and advanced camera techniques (e.g., dolly zooms) to showcase the trolley’s "Luxury Gold" aesthetic and technical features.</p>
-                                    <p class="mb-4">test test</p>
-                                    <!-- View KEEPER Project Button-->
+                                    <p class="text-start mb-4">
+                                        <p class="text-start fs-1 fw-bold">Project: KEEPER (Ergonomic Smart Housekeeping Trolley)</p>
+                                        <p class="text-start fs-3 fw-bold">Project Context</p>
+                                            <p class="text-start"><span class="fw-bold">The Problem:</span> Hotel housekeeping is one of the most 
+                                                physically demanding roles in hospitality , with attendants frequently suffering chronic musculoskeletal 
+                                                injuries. User research revealed that staff push fully laden trolleys weighing approximately 149 kg , which 
+                                                burns 750 kcal per 10,000 steps—three times the exertion of normal walking. This immense physical load leads 
+                                                to high staff turnover, chronic neck/back damage, and mid-shift operational inefficiencies.</p>
+                                            <p class="text-start"><span class="fw-bold">My Role:</span> Working in a multidisciplinary team of 5, I aided in Product 
+                                                Visualization and Interface Interaction Design. I was responsible for bridging the gap between 
+                                                    our complex engineering systems and our luxury hospitality stakeholders by taking charge of the end-to-end 
+                                                    physical interaction ergonomics and multimedia strategy.</p>
+                                        <p class="text-start fs-3 fw-bold">Process</p>
+                                            <p class="text-start"><span class="fw-bold">Discover & Map:</span> As a team, we conducted extensive qualitative research, scraping data from 250 hotels and analyzing housekeeping activity workflows. This allowed us to target the trolley as the single intersection point of all ergonomic and procedural pain points.</p>
+                                            <p class="text-start"><span class="fw-bold">System Architecture & Prototyping:</span> We engineered an integrated system featuring a 24V high-torque drive motor , load-cell sensing shelves for inventory tracking , and an enclosed UV-LED sterilization compartment.</p>
+                                            <p class="text-start"><span class="fw-bold">Iterative Problem Solving:</span> I collaborated on refining the physical user interface display housing, executing multiple CAD iterations to flush-mount the I2C module and optimize font sizes for better visibility.</p>
+                                            <p class="text-start"><span class="fw-bold">My Main Contribution (AI-Driven Cinematic Production):</span> To secure institutional buy-in, I directed and produced a high-fidelity cinematic project trailer. I utilized AI-driven 3D product visualization tools and advanced cinematic camera techniques (such as technical dolly zooms) to showcase the trolley's 'Luxury Gold' aesthetic finish , dynamic lighting signatures, and internal engineering subsystems.</p>
+                                            <p class="text-start fs-3 fw-bold">Impact</p>
+                                        <p class="text-start"><span class="fw-bold">Ergonomic Strain Mitigation:</span> Dropped physical pushing effort to a near-zero threshold via the motorized handlebar system , directly mitigating chronic wrist, shoulder, and lower-back strain for the 160 cm female demographic.</p>
+                                            <p class="text-start"><span class="fw-bold">Operational Efficiency:</span> The integrated smart load-cell sensing system provided real-time, "at-a-glance" inventory tracking. This completely eliminated mid-shift room-to-storage backtracking trips , saving vital turnaround time during the strict 15–20 minute room refreshment windows.</p>
+                                            <p class="text-start"><span class="fw-bold">Energy Expenditure Reduction:</span> Reduced the physical calorie cost of trolley operation by 66.2%, bringing the energy required down from an exhausting 750 kcal toward the baseline of standard walking (253 kcal).</p>
+                                            <p class="text-start"><span class="fw-bold">Hygiene & Brand Elevation:</span> Elevated the trolley from a basic industrial tool into a premium hospitality asset with a built-in UV sterilization compartment optimized to maintain strict hospitality hygiene standards.</p>
+                                            <p class="text-start fs-5 fw-bold">For more information, check out our <a href="https://canva.link/vqqyqa3c1ww9bn6" target="_blank" rel="noopener noreferrer">presentation slides</a>, <a href="https://shorturl.at/po4oW" target="_blank" rel="noopener noreferrer">report</a>, and <a href="https://shorturl.at/qnM4f" target="_blank" rel="noopener noreferrer">poster.</a></p>
+                                    </p>        
+        
+                                    <!-- View KEEPER Project Trailer Button-->
                                     <div class="text-center mt-4">
                                         <a class="btn btn-xl btn-outline-dark" href="https://sutdapac-my.sharepoint.com/:v:/g/personal/anna_sawit_mymail_sutd_edu_sg/IQA8xUJqnjI4S7Lus8_62Z3xATIz0MVdDECZgbwSU_4TI8A?e=wlcFlq&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank" rel="noopener noreferrer">
                                             <i class="fas fa-eye fa-fw"></i>
-                                            View Project
+                                            View Short Trailer
                                         </a>
                                     </div>
                                     <div class="text-center mt-4">
@@ -358,19 +300,27 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/amplify-poster2.jpg" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">A collaboration with 6 other students, this project is a music-focused application platform 
-                                        that helps to keep users updated on upcoming concerts tailored to their preferences (in terms of the artists 
-                                        they follow on the app), while also giving them a space to share songs, follow artists, and connect with other 
-                                        passionate music fans and lovers. With minimalistic and user-friendly UI, users can track concert events on the 
-                                        in-app calendar, create and view posts by other users, and be notified of upcoming concerts from their favourite 
-                                        artists via in-app Notifications. Amplify’s UI also includes a navigation bar that enables users to switch between 
-                                        screens seamlessly. My main contribution was that I assisted with the early stages of development for this app by 
-                                        working on the low-fidelity prototyping for the UI on Adobe XD. I also helped with the short video production to showcase the final Amplify app.</p>
+                                    <p class="text-start mb-4">
+                                        <p class="text-start fs-1 fw-bold">Project: Amplify (Social Music Ecosystem & Concert Tracker)</p>
+                                        <p class="text-start fs-3 fw-bold">Project Context</p>
+                                            <p class="text-start"><span class="fw-bold">The Problem:</span> Music enthusiasts lack a unified, dedicated social space to connect over shared tastes, while concert-goers frequently struggle to find consolidated, personalized event updates. Traditional platforms treat music streaming, social networking, and event ticketing as fragmented experiences, creating friction for fans trying to stay updated on their favorite artists.</p>
+                                            <p class="text-start"><span class="fw-bold">My Role:</span>Serving as the UI/UX Designer & Multimedia Specialist in a 7-person development team, I bridged the gap between user requirements and technical execution. I assisted with the foundational visual architecture and the end-to-end launch media used to pitch the application.</p>
+                                        <p class="text-start fs-3 fw-bold">Process</p>
+                                            <p class="text-start"><span class="fw-bold">Feature Prioritization:</span> Collaborated with the team to establish a modular product roadmap, breaking features into Core (user profiles, song sharing, music feeds), Secondary (artist follows, engagement loops), and Tertiary (personalized concert tracking and in-app calendar systems).</p>
+                                            <p class="text-start"><span class="fw-bold">Key Contribution - Low-Fidelity Prototyping:</span> Translated abstract user requirements into a clean, minimalist design framework. I mapped user journeys and designed low-fidelity wireframes using Adobe XD, establishing the core navigation bar architecture to ensure seamless cross-screen transitions, intuitive feed structures, and accessible calendar layouts before frontend engineering began. Check out the Adobe XD clickable low-fi prototype link <a href="https://xd.adobe.com/view/111abff7-7583-4e66-9500-8bd0bc39c92d-4449/?fullscreen&hints=off" target="_blank" rel="noopener noreferrer">here.</a>.</p>
+                                            <p class="text-start"><span class="fw-bold">Cross-Functional Handoff:</span> Partnered with the development team to hand over design assets, ensuring the Azure SQL database, backend APIs (Azure Functions), and Android frontend aligned perfectly with the intended user experience.</p>
+                                            <p class="text-start"><span class="fw-bold">Key Contribution - Product Showcase & Video Production:</span> Directed and produced the final product video trailer. I captured high-fidelity screen captures of working features (real-time notification triggers, concert filtering, etc.) and synthesized them into a high-energy visual narrative to demonstrate user value to evaluators.</p>
+                                            <p class="text-start fs-3 fw-bold">Impact</p>
+                                            <p class="text-start"><span class="fw-bold">Optimized Cognitive Load:</span> Replaced a fractured multi-app journey (social media + ticketing sites + calendar apps) with a centralized, "one-stop" minimalist UI, dropping the steps required to discover a localized concert and add it to a personal schedule down to a few clicks.</p>
+                                            <p class="text-start"><span class="fw-bold">Seamless Cross-Screen Navigation:</span> The implemented navigation bar and uniform design tokens allowed beta testers to switch between social feeds, concert tracking, and personal profile systems seamlessly.</p>
+                                            <p class="text-start"><span class="fw-bold">High-Fidelity Feature Validation:</span> Successfully validated full-stack architecture loops—demonstrating real-time Azure SQL data retrieval, secure Azure AD B2C user authentication, and responsive animations through the <a href="https://shorturl.at/5PWdT" target="_blank" rel="noopener noreferrer">final multimedia video showcase trailer.</a></p>
+                                            <p class="text-start fs-5 fw-bold">For more information, check out our <a href="https://shorturl.at/Z9zsJ" target="_blank" rel="noopener noreferrer">presentation slides</a>.
+                                    </p>        
                                     <!-- View Amplify Project Button-->
                                     <div class="text-center mt-4">
-                                        <a class="btn btn-xl btn-outline-dark" href="https://sutdapac-my.sharepoint.com/:v:/g/personal/anna_sawit_mymail_sutd_edu_sg/IQC5r9zYNBSvRZXXf6oYYWJuAeSiIO2QfbVClM-_U_Ima6E?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=DlEQk4" target="_blank" rel="noopener noreferrer">
+                                        <a class="btn btn-xl btn-outline-dark" href="https://shorturl.at/XowR5" target="_blank" rel="noopener noreferrer">
                                             <i class="fas fa-eye fa-fw"></i>
-                                            View Project
+                                            View Low-Fi Playthrough
                                         </a>
                                     </div>
                                     <div class="text-center mt-4">
@@ -396,7 +346,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">LUMINO</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -404,13 +354,27 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/LUMINO.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                        <p class="text-start fs-1 fw-bold">Project: LUMINO (Interactive Smart Lighting Installation)</p>
+                                        <p class="text-start fs-3 fw-bold">Project Context</p>
+                                            <p class="text-start"><span class="fw-bold">The Problem:</span> Poorly lit outdoor pathways around the school campus (such as the alleyway near the FabLab) created a strong sense of insecurity, discomfort, and physical tripping hazards for students and faculty walking at night. Initial user research revealed that a significant majority of campus commuters felt unsafe in these dimly lit areas, frequently forcing them to take longer, alternative routes to avoid the space entirely.</p>
+                                            <p class="text-start"><span class="fw-bold">My Role:</span> Serving as the Lead Visualization & UI Designer within a 5-person multidisciplinary team, I was responsible for transforming our hardware and environmental concept into a compelling digital narrative. I owned the end-to-end multimedia strategy, experiential rendering, and final video production.</p>
+                                        <p class="text-start fs-3 fw-bold">Process</p>
+                                            <p class="text-start"><span class="fw-bold">User Discovery & Ethnographic Research:</span> Developed user personas (such as freshman hostel residents and faculty) to map emotional journeys and pinpoint specific dark zones along campus pathways causing the greatest friction.</p>
+                                            <p class="text-start"><span class="fw-bold">Multi-Sensory System Architecture:</span> Co-designed an ecosystem combining a physical interactive game panel, embedded light discs on the pathways, solar-powered overhead lighting, and artistic laser projections to make the alleyway interactive, safe, and aesthetic.</p>
+                                            <p class="text-start"><span class="fw-bold">Hardware Iteration:</span> Collaborated on testing the physical interactive panel's logic loop (where consecutive button presses cycled through dynamic, loop-based light settings powered by an Arduino architecture).</p>
+                                            <p class="text-start"><span class="fw-bold">My Main Contribution (Cinematic 3D Product Visualization):</span> To realistically demonstrate how our system transforms an environment dynamically at night, I built a high-fidelity virtual model of the campus pathway. Using the Twinmotion software, I authored a cinematic trailer showcasing real-time atmospheric lighting transitions, global environmental light behaviors, 3D material textures, and simulated safety enhancements before physical deployment.</p>
+                                            <p class="text-start fs-3 fw-bold">Impact</p>
+                                        <p class="text-start"><span class="fw-bold">Perceived Safety & Comfort Optimization:</span> Validated the design framework through user-re-surveys; after experiencing the interactive LUMINO system solution, 71.9% of respondents found the solution highly effective at reversing the negative spatial experience and boosting comfort levels.</p>
+                                            <p class="text-start"><span class="fw-bold">Functional System Reliability:</span> Successfully validated the interactive panel's deployment metrics through extensive multi-user loop testing, confirming flawless execution of the 3-click light cycle and automatic power-down commands.</p>
+                                            <p class="text-start"><span class="fw-bold">High-Fidelity Stakeholder Alignment:</span> Utilized the Twinmotion cinematic visualization to perfectly bridge the gap between technical Arduino-driven hardware and environmental aesthetics, allowing stakeholders to experience the real-time atmospheric impact of the installation prior to physical assembly.</p>
+                                            <p class="text-start fs-5 fw-bold">For more information, check out our <a href="https://canva.link/y36bh0w2kdos70t" target="_blank" rel="noopener noreferrer">presentation slides</a>, and <a href="https://shorturl.at/yJ5sd" target="_blank" rel="noopener noreferrer">poster.</a></p>
+                                    </p>        
                                     <div class="text-center mt-4">
-                                        <a class="btn btn-xl btn-outline-dark" href="https://sutdapac-my.sharepoint.com/:v:/g/personal/anna_sawit_mymail_sutd_edu_sg/IQA8rZDgIzKNS5hY0eBkP7hqAROMV3JeT3B-9mHiuLMAuSk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=vao8hp" target="_blank" rel="noopener noreferrer">
+                                        <a class="btn btn-xl btn-outline-dark" href="https://shorturl.at/FMJlg" target="_blank" rel="noopener noreferrer">
                                             <i class="fas fa-eye fa-fw"></i>
-                                            View Project
+                                            View Short Trailer
                                         </a>
                                     </div>
                                     <div class="text-center mt-4">
@@ -436,7 +400,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Board.Vision App Redesign</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -444,9 +408,30 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/bv-app.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                        <p class="text-start fs-1 fw-bold">Project: LUMINO (Interactive Smart Lighting Installation)</p>
+                                        <p class="text-start fs-3 fw-bold">Project Context</p>
+                                            <p class="text-start"><span class="fw-bold">The Problem:</span> Poorly lit outdoor pathways around the school campus (such as the alleyway near the FabLab) created a strong sense of insecurity, discomfort, and physical tripping hazards for students and faculty walking at night. Initial user research revealed that a significant majority of campus commuters felt unsafe in these dimly lit areas, frequently forcing them to take longer, alternative routes to avoid the space entirely.</p>
+                                            <p class="text-start"><span class="fw-bold">My Role:</span> Serving as the Lead Visualization & UI Designer within a 5-person multidisciplinary team, I was responsible for transforming our hardware and environmental concept into a compelling digital narrative. I owned the end-to-end multimedia strategy, experiential rendering, and final video production.</p>
+                                        <p class="text-start fs-3 fw-bold">Process</p>
+                                            <p class="text-start"><span class="fw-bold">User Discovery & Ethnographic Research:</span> Developed user personas (such as freshman hostel residents and faculty) to map emotional journeys and pinpoint specific dark zones along campus pathways causing the greatest friction.</p>
+                                            <p class="text-start"><span class="fw-bold">Multi-Sensory System Architecture:</span> Co-designed an ecosystem combining a physical interactive game panel, embedded light discs on the pathways, solar-powered overhead lighting, and artistic laser projections to make the alleyway interactive, safe, and aesthetic.</p>
+                                            <p class="text-start"><span class="fw-bold">Hardware Iteration:</span> Collaborated on testing the physical interactive panel's logic loop (where consecutive button presses cycled through dynamic, loop-based light settings powered by an Arduino architecture).</p>
+                                            <p class="text-start"><span class="fw-bold">My Main Contribution (Cinematic 3D Product Visualization):</span> To realistically demonstrate how our system transforms an environment dynamically at night, I built a high-fidelity virtual model of the campus pathway. Using the Twinmotion software, I authored a cinematic trailer showcasing real-time atmospheric lighting transitions, global environmental light behaviors, 3D material textures, and simulated safety enhancements before physical deployment.</p>
+                                            <p class="text-start fs-3 fw-bold">Impact</p>
+                                        <p class="text-start"><span class="fw-bold">Ergonomic Strain Mitigation:</span> Dropped physical pushing effort to a near-zero threshold via the motorized handlebar system , directly mitigating chronic wrist, shoulder, and lower-back strain for the 160 cm female demographic.</p>
+                                            <p class="text-start"><span class="fw-bold">Operational Efficiency:</span> The integrated smart load-cell sensing system provided real-time, "at-a-glance" inventory tracking. This completely eliminated mid-shift room-to-storage backtracking trips , saving vital turnaround time during the strict 15–20 minute room refreshment windows.</p>
+                                            <p class="text-start"><span class="fw-bold">Energy Expenditure Reduction:</span> Reduced the physical calorie cost of trolley operation by 66.2%, bringing the energy required down from an exhausting 750 kcal toward the baseline of standard walking (253 kcal).</p>
+                                            <p class="text-start"><span class="fw-bold">Hygiene & Brand Elevation:</span> Elevated the trolley from a basic industrial tool into a premium hospitality asset with a built-in UV sterilization compartment optimized to maintain strict hospitality hygiene standards.</p>
+                                            <p class="text-start fs-5 fw-bold">For more information, check out our <a href="https://canva.link/vqqyqa3c1ww9bn6" target="_blank" rel="noopener noreferrer">presentation slides</a>, <a href="https://shorturl.at/po4oW" target="_blank" rel="noopener noreferrer">report</a>, and <a href="https://shorturl.at/qnM4f" target="_blank" rel="noopener noreferrer">poster.</a></p>
+                                    </p>        
+                                    <div class="text-center mt-4">
+                                        <a class="btn btn-xl btn-outline-dark" href="" target="_blank" rel="noopener noreferrer">
+                                            <i class="fas fa-eye fa-fw"></i>
+                                            View Project
+                                        </a>
+                                    </div>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -468,7 +453,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">GUIX Project</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -478,7 +463,28 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                        <p class="text-start fs-1 fw-bold">Project: LUMINO (Interactive Smart Lighting Installation)</p>
+                                        <p class="text-start fs-3 fw-bold">Project Context</p>
+                                            <p class="text-start"><span class="fw-bold">The Problem:</span> Poorly lit outdoor pathways around the school campus (such as the alleyway near the FabLab) created a strong sense of insecurity, discomfort, and physical tripping hazards for students and faculty walking at night. Initial user research revealed that a significant majority of campus commuters felt unsafe in these dimly lit areas, frequently forcing them to take longer, alternative routes to avoid the space entirely.</p>
+                                            <p class="text-start"><span class="fw-bold">My Role:</span> Serving as the Lead Visualization & UI Designer within a 5-person multidisciplinary team, I was responsible for transforming our hardware and environmental concept into a compelling digital narrative. I owned the end-to-end multimedia strategy, experiential rendering, and final video production.</p>
+                                        <p class="text-start fs-3 fw-bold">Process</p>
+                                            <p class="text-start"><span class="fw-bold">User Discovery & Ethnographic Research:</span> Developed user personas (such as freshman hostel residents and faculty) to map emotional journeys and pinpoint specific dark zones along campus pathways causing the greatest friction.</p>
+                                            <p class="text-start"><span class="fw-bold">Multi-Sensory System Architecture:</span> Co-designed an ecosystem combining a physical interactive game panel, embedded light discs on the pathways, solar-powered overhead lighting, and artistic laser projections to make the alleyway interactive, safe, and aesthetic.</p>
+                                            <p class="text-start"><span class="fw-bold">Hardware Iteration:</span> Collaborated on testing the physical interactive panel's logic loop (where consecutive button presses cycled through dynamic, loop-based light settings powered by an Arduino architecture).</p>
+                                            <p class="text-start"><span class="fw-bold">My Main Contribution (Cinematic 3D Product Visualization):</span> To realistically demonstrate how our system transforms an environment dynamically at night, I built a high-fidelity virtual model of the campus pathway. Using the Twinmotion software, I authored a cinematic trailer showcasing real-time atmospheric lighting transitions, global environmental light behaviors, 3D material textures, and simulated safety enhancements before physical deployment.</p>
+                                            <p class="text-start fs-3 fw-bold">Impact</p>
+                                        <p class="text-start"><span class="fw-bold">Ergonomic Strain Mitigation:</span> Dropped physical pushing effort to a near-zero threshold via the motorized handlebar system , directly mitigating chronic wrist, shoulder, and lower-back strain for the 160 cm female demographic.</p>
+                                            <p class="text-start"><span class="fw-bold">Operational Efficiency:</span> The integrated smart load-cell sensing system provided real-time, "at-a-glance" inventory tracking. This completely eliminated mid-shift room-to-storage backtracking trips , saving vital turnaround time during the strict 15–20 minute room refreshment windows.</p>
+                                            <p class="text-start"><span class="fw-bold">Energy Expenditure Reduction:</span> Reduced the physical calorie cost of trolley operation by 66.2%, bringing the energy required down from an exhausting 750 kcal toward the baseline of standard walking (253 kcal).</p>
+                                            <p class="text-start"><span class="fw-bold">Hygiene & Brand Elevation:</span> Elevated the trolley from a basic industrial tool into a premium hospitality asset with a built-in UV sterilization compartment optimized to maintain strict hospitality hygiene standards.</p>
+                                            <p class="text-start fs-5 fw-bold">For more information, check out our <a href="https://canva.link/vqqyqa3c1ww9bn6" target="_blank" rel="noopener noreferrer">presentation slides</a>, <a href="https://shorturl.at/po4oW" target="_blank" rel="noopener noreferrer">report</a>, and <a href="https://shorturl.at/qnM4f" target="_blank" rel="noopener noreferrer">poster.</a></p>
+                                    </p>        
+                                    <div class="text-center mt-4">
+                                        <a class="btn btn-xl btn-outline-dark" href="" target="_blank" rel="noopener noreferrer">
+                                            <i class="fas fa-eye fa-fw"></i>
+                                            View Project
+                                        </a>
+                                    </div>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -508,9 +514,30 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/alive-project.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                        <p class="text-start fs-1 fw-bold">Project: LUMINO (Interactive Smart Lighting Installation)</p>
+                                        <p class="text-start fs-3 fw-bold">Project Context</p>
+                                            <p class="text-start"><span class="fw-bold">The Problem:</span> Poorly lit outdoor pathways around the school campus (such as the alleyway near the FabLab) created a strong sense of insecurity, discomfort, and physical tripping hazards for students and faculty walking at night. Initial user research revealed that a significant majority of campus commuters felt unsafe in these dimly lit areas, frequently forcing them to take longer, alternative routes to avoid the space entirely.</p>
+                                            <p class="text-start"><span class="fw-bold">My Role:</span> Serving as the Lead Visualization & UI Designer within a 5-person multidisciplinary team, I was responsible for transforming our hardware and environmental concept into a compelling digital narrative. I owned the end-to-end multimedia strategy, experiential rendering, and final video production.</p>
+                                        <p class="text-start fs-3 fw-bold">Process</p>
+                                            <p class="text-start"><span class="fw-bold">User Discovery & Ethnographic Research:</span> Developed user personas (such as freshman hostel residents and faculty) to map emotional journeys and pinpoint specific dark zones along campus pathways causing the greatest friction.</p>
+                                            <p class="text-start"><span class="fw-bold">Multi-Sensory System Architecture:</span> Co-designed an ecosystem combining a physical interactive game panel, embedded light discs on the pathways, solar-powered overhead lighting, and artistic laser projections to make the alleyway interactive, safe, and aesthetic.</p>
+                                            <p class="text-start"><span class="fw-bold">Hardware Iteration:</span> Collaborated on testing the physical interactive panel's logic loop (where consecutive button presses cycled through dynamic, loop-based light settings powered by an Arduino architecture).</p>
+                                            <p class="text-start"><span class="fw-bold">My Main Contribution (Cinematic 3D Product Visualization):</span> To realistically demonstrate how our system transforms an environment dynamically at night, I built a high-fidelity virtual model of the campus pathway. Using the Twinmotion software, I authored a cinematic trailer showcasing real-time atmospheric lighting transitions, global environmental light behaviors, 3D material textures, and simulated safety enhancements before physical deployment.</p>
+                                            <p class="text-start fs-3 fw-bold">Impact</p>
+                                        <p class="text-start"><span class="fw-bold">Ergonomic Strain Mitigation:</span> Dropped physical pushing effort to a near-zero threshold via the motorized handlebar system , directly mitigating chronic wrist, shoulder, and lower-back strain for the 160 cm female demographic.</p>
+                                            <p class="text-start"><span class="fw-bold">Operational Efficiency:</span> The integrated smart load-cell sensing system provided real-time, "at-a-glance" inventory tracking. This completely eliminated mid-shift room-to-storage backtracking trips , saving vital turnaround time during the strict 15–20 minute room refreshment windows.</p>
+                                            <p class="text-start"><span class="fw-bold">Energy Expenditure Reduction:</span> Reduced the physical calorie cost of trolley operation by 66.2%, bringing the energy required down from an exhausting 750 kcal toward the baseline of standard walking (253 kcal).</p>
+                                            <p class="text-start"><span class="fw-bold">Hygiene & Brand Elevation:</span> Elevated the trolley from a basic industrial tool into a premium hospitality asset with a built-in UV sterilization compartment optimized to maintain strict hospitality hygiene standards.</p>
+                                            <p class="text-start fs-5 fw-bold">For more information, check out our <a href="https://canva.link/vqqyqa3c1ww9bn6" target="_blank" rel="noopener noreferrer">presentation slides</a>, <a href="https://shorturl.at/po4oW" target="_blank" rel="noopener noreferrer">report</a>, and <a href="https://shorturl.at/qnM4f" target="_blank" rel="noopener noreferrer">poster.</a></p>
+                                    </p>        
+                                    <div class="text-center mt-4">
+                                        <a class="btn btn-xl btn-outline-dark" href="" target="_blank" rel="noopener noreferrer">
+                                            <i class="fas fa-eye fa-fw"></i>
+                                            View Project
+                                        </a>
+                                    </div>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
